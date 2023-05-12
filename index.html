@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Web Icon-->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet">
   <!-- Origin CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/overlays.css">
   <link rel="stylesheet" href="assets/css/configuration.css">
   <title>Tic Tac Toe</title>
 </head>
+
 <body>
   <!----Header---->
   <div id="backdrop"></div>
@@ -41,7 +47,7 @@
           <active>
             <h2>Player 1</h2>
             <h3>PLAYER NAME</h3>
-            <p>X</p>
+            <p class="player-symbol">X</p>
             <button class="btn btn-alt">Edit</button>
           </active>
         </li>
@@ -49,7 +55,7 @@
           <active>
             <h2>Player 2</h2>
             <h3>PLAYER NAME</h3>
-            <p>O</p>
+            <p class="player-symbol">O</p>
             <button class="btn btn-alt">Edit</button>
           </active>
         </li>
@@ -81,4 +87,5 @@
   <!-- Footer Section -->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

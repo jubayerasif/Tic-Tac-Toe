@@ -1,3 +1,22 @@
 .modal{
     position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+@media (min-width: 48rem) {
+    .modal{
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
 }

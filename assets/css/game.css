@@ -1,5 +1,27 @@
-#active-game{
-    text-align: center;
-    margin: 2rem 0 5rem 0; /* top right bottom left*/
-    /* display: none;*/
+#active-game {
+  text-align: center;
+  margin: 2rem 0 5rem 0; /* top right bottom left*/
+  /* display: none; */
+}
+
+#game-over {
+  width: 90%;
+  max-width: 40rem;
+  margin: auto;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: rgb(50, 5, 87);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  /* display: none; */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#game-over h2{
+    font-size: 3rem;
+
+    /* video at 4:00 */
 }

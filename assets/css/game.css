@@ -41,4 +41,15 @@
   gap: 0.5rem;
 }
 
-/* video at 6:00 */
+#game-board li{
+  background-color: rgb(215, 187, 247);
+  border-bottom: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* video at :00 */

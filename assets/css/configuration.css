@@ -1,7 +1,6 @@
 #config-overlay {
   text-align: center;
 }
-
 #config-overlay h2 {
   margin: 0.5rem 0;
 }
@@ -21,20 +20,27 @@
   padding: 0.35rem;
 }
 
+.error label{
+  color: rgb(136, 2, 2);
+}
+.error input{
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
+
 #game-configuration {
   width: 90%;
   max-width: 40rem;
   margin: 3rem auto;
   text-align: center;
 }
-
 #game-configuration ol {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
 #game-configuration ol li {
   margin: 1rem;
   padding: 1rem;
@@ -47,7 +53,6 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-
 #game-configuration h2 {
   font-size: 1rem;
   margin: 0.5rem 0;

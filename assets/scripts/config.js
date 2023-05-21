@@ -1,5 +1,5 @@
 function openPlayerConfig() {
-  const selectedPlayerId = +event.target.dataset.playerid; // '+1' => 1
+  editedPlayer = +event.target.dataset.playerid; // '+1' => 1
   playerConfigOverlayElement.style.display = "block";
   backdropElement.style.display = "block";
 }

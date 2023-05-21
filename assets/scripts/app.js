@@ -1,5 +1,7 @@
 let editedPlayer = 0;
 
+const player = []
+
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 const formELement = document.querySelector("form");

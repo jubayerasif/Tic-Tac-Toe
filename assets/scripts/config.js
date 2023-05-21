@@ -4,14 +4,18 @@ function openPlayerConfig() {
 }
 
 function closePlayerConfig() {
-    playerConfigOverlayElement.style.display = "none";
+  playerConfigOverlayElement.style.display = "none";
   backdropElement.style.display = "none";
 }
 
 function savePlayerConfig(event) {
   event.preventDefault();
   const formData = new FormData(event.target);
-  const enteredPlayername = formData.get('playername');
+  const enteredPlayername = formData.get("playername").trim(); //'      '=> ''
   // console.log(enteredPlayername);
+  if (!enteredPlayername) { // enteredPlayername === ''
+    errorsOutputElement.textContent = 'Please enter a valid name!';
+    return;
+  }
   
 }

@@ -9,6 +9,7 @@ function closePlayerConfig() {
   backdropElement.style.display = "none";
   formELement.firstElementChild.classList.remove("error");
   errorsOutputElement.textContent = "";
+  formELement.firstElementChild.lastElementChild.value = "";
 }
 
 function savePlayerConfig(event) {

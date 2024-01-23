@@ -1,6 +1,6 @@
 let editedPlayer = 0;
 
-const player = [
+const players = [
   {
     name: "",
     symbol: "X",
@@ -13,7 +13,7 @@ const player = [
 
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
-const formELement = document.querySelector("form");
+const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-errors");
 const gameAreaElement = document.getElementById("active-game");
 // const Element = document.getElementById("-");
@@ -29,6 +29,6 @@ editPlayer2BtnElement.addEventListener("click", openPlayerConfig);
 cancelConfigBtnElement.addEventListener("click", closePlayerConfig);
 backdropElement.addEventListener("click", closePlayerConfig);
 
-formELement.addEventListener("submit", savePlayerConfig);
+formElement.addEventListener("submit", savePlayerConfig);
 
 startNewGameBtnElement.addEventListener("click", startNewGame);

@@ -20,10 +20,10 @@
   padding: 0.35rem;
 }
 
-.error label{
+.error label {
   color: rgb(136, 2, 2);
 }
-.error input{
+.error input {
   border-color: rgb(136, 2, 2);
   color: rgb(136, 2, 2);
   background-color: rgb(253, 219, 219);

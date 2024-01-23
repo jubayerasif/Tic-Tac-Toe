@@ -5,3 +5,5 @@ function startNewGame() {
   }
   gameAreaElement.style.display = "block";
 }
+
+function selectGameField() {}

@@ -11,8 +11,8 @@ function resetGameStatus() {
     for(let j = 0; j < 3; j++){
       gameData[i][j] = 0;
       const gameBoardItemElement = gameBoardElement.children[gameBoardIndex];
-      gameBoardElement.children[gameBoardIndex].textContent = "";
-      gameBoardElement.classList.remove("disabled");
+      gameBoardItemElement.textContent = "";
+      gameBoardItemElement.classList.remove("disabled");
       gameBoardIndex++;
     }
   }
@@ -60,6 +60,7 @@ function selectGameField(event) {
   // console.log(gameData);
 
   const winnerId = checkForGameOver();
+
   if (winnerId !== 0){
     endGame(winnerId);
   };
@@ -124,6 +125,6 @@ function endGame(winnerId) {
     gameOverElement.firstElementChild.firstElementChild.textContent =
       winnerName;
   } else {
-    gameOverElement.firstElementChild.textContent = "It\'s a draw!.";
+    gameOverElement.firstElementChild.textContent = "It's a draw!.";
   }
 }

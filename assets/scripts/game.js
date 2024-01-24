@@ -21,7 +21,17 @@ function selectGameField(event) {
   if (event.target.tagName !== "LI") {
     return;
   }
-  event.target.textContent = players[activePlayer].symbol; // player[0]
-  event.target.classList.add("disabled");
+
+  const selectedField = event.target;
+
+  selectedField.textContent = players[activePlayer].symbol; // player[0]
+  selectedField.classList.add("disabled");
+
+  const selectedColumn = selectedField.dataset.col;
+  const selectedRow = selectedField.dataset.row;
+
+  gameData[selectedRow][selectedColumn];
+
+
   switchPlayer();
 }

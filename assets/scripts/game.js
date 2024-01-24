@@ -3,12 +3,12 @@ function resetGameStatus() {
   currentRound = 1;
   gameIsOver = false;
   gameOverElement.firstElementChild.innerHTML =
-  'You won, <span id = "winner-name">PLAYER NAME</span>!';
+    'You won, <span id = "winner-name">PLAYER NAME</span>!';
   gameOverElement.style.display = "none";
 
   let gameBoardIndex = 0;
-  for(let i = 0; i < 3; i++){
-    for(let j = 0; j < 3; j++){
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
       gameData[i][j] = 0;
       const gameBoardItemElement = gameBoardElement.children[gameBoardIndex];
       gameBoardItemElement.textContent = "";
@@ -40,7 +40,7 @@ function switchPlayer() {
 }
 
 function selectGameField(event) {
-  if (event.target.tagName !== "LI" || gameOver) {
+  if (event.target.tagName !== "LI" || gameIsOver) {
     return;
   }
 
@@ -61,9 +61,9 @@ function selectGameField(event) {
 
   const winnerId = checkForGameOver();
 
-  if (winnerId !== 0){
+  if (winnerId !== 0) {
     endGame(winnerId);
-  };
+  }
 
   currentRound++;
   switchPlayer();
